@@ -76,6 +76,21 @@ services:
       - es02
       - es03
 
+  logstash: 
+    image: docker.elastic.co/logstash/logstash:$ELASTIC_VERSION
+    container_name: logstash 
+    volumes: 
+      - type: bind 
+        source: ./logstash/config/logstash.yml
+        target: /usr/share/logstash/config/logstash.yml
+        read_only: true
+    networks:
+      - elastic
+    depends_on: 
+      - es01
+      - es02 
+      - es03
+
 volumes:
   data01:
     driver: local
