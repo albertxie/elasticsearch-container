@@ -5,4 +5,4 @@ COPY ./pipeline/* /usr/share/logstash/pipeline
 
 COPY ./data/* .
 
-CMD ["./bin/logstash", "-f", "/usr/share/logstash/netflix_title_importer.conf"]
+CMD ["./bin/logstash", "-f", "/usr/share/logstash/pipeline/netflix_title_importer.conf"]
