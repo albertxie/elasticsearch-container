@@ -64,7 +64,7 @@ pipeline.batch.size: 125
 # if there are multiple workers.
 # "false" will disable any extra processing necessary for preserving ordering.
 #
-pipeline.ordered: auto
+# pipeline.ordered: auto
 #
 # ------------ Pipeline Configuration Settings --------------
 #
@@ -86,7 +86,7 @@ pipeline.ordered: auto
 # config.reload.automatic: false
 #
 # How often to check if the pipeline configuration has changed (in seconds)
-# Note that the unit value (s) is required. Values without a qualifier (e.g. 60) 
+# Note that the unit value (s) is required. Values without a qualifier (e.g. 60)
 # are treated as nanoseconds.
 # Setting the interval this way is not recommended and might change in later versions.
 #
@@ -232,7 +232,7 @@ pipeline.ordered: auto
 #
 # X-Pack Monitoring
 # https://www.elastic.co/guide/en/logstash/current/monitoring-logstash.html
-#xpack.monitoring.enabled: false
+xpack.monitoring.enabled: false
 #xpack.monitoring.elasticsearch.username: logstash_system
 #xpack.monitoring.elasticsearch.password: password
 #xpack.monitoring.elasticsearch.hosts: ["https://es1:9200", "https://es2:9200"]
