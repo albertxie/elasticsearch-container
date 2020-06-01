@@ -1,6 +1,7 @@
 #######################################
 ## 2.2 CRUD
 #######################################
+
 POST demo1/_doc/
 {
   "name": "Albert",
@@ -268,5 +269,5 @@ GET _analyze
 ## 5.3 Cluster Health
 #######################################
 
-GET _cluster/health 
+GET _cluster/health
 GET _cat/nodes
