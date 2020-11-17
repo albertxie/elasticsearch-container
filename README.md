@@ -1,6 +1,4 @@
-# ELK Stack Demo
-
-## Configuration
+# Elasticsearch Container
 Ensure your docker environment has at least 8GB of memory.
 
 To spinup:
@@ -12,6 +10,3 @@ To teardown:
 ```bash
 docker-compose down
 ```
-
-## Dataset
-Dataset originally from: https://www.kaggle.com/shivamb/netflix-shows
