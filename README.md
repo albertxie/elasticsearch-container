@@ -1,5 +1,4 @@
 # Elasticsearch Container
-Ensure your docker environment has at least 8GB of memory.
 
 To spinup:
 ```bash
